@@ -11,7 +11,7 @@ def print_ascii(text, color):
   print(colored(figlet_format(text), color))
 
 # Create a list of dicionaries
-questions = json.load(open("questions.json"))
+questions = json.load(open("./questions.json"))
 
 # Print "Python Quiz" to the console as an ASCII
 print_ascii("Python Quiz", "blue")
@@ -29,7 +29,7 @@ results = {
 isErrorExcecuted = False
 def executeError():
   global isErrorExcecuted
-  print(f"{Fore.RED}Something went wrong ¯\_(ツ)_/¯!\nTry to rerun the program!")
+  print(f"{Fore.RED}Something went wrong ¯\\_(ツ)_/¯!\nTry to rerun the program!")
   isErrorExcecuted = True
 
 # Loop over an array of objects
